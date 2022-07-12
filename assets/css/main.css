@@ -2193,6 +2193,9 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
+  max-height: 250px;
+  background-color: var(--color-secondary);
+  
 }
 
 .footer .footer-content {
