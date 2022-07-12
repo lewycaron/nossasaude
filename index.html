@@ -39,16 +39,11 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-
         <img src="assets/img/nossa-saude_bgwhite.png" alt="">
-
       </a>
-
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero" class="active">Início</a></li>
@@ -57,31 +52,72 @@
           <li><a href="#estrutura">Rede de Atendimento</a></li>
           <li><a href="#empresa">Diferenciais</a></li>
           <li><a href="#features">Aplicativo</a></li>
-          <li><a href="#">Contatos</a></li>
         </ul>
       </nav><!-- .navbar -->-
-
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-4">
-          <p>
-          <h4 data-aos="fade-up">Nossa referência na gestão integrada da saúde, agora também em Ponta Grossa e Região.
-          </h4>
-          </p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Início</a>
-            <a href="https://www.youtube.com/watch?v=hsk1tWajLq8"
-              class="glightbox btn-watch-video d-flex align-items-center"><i
-                class="bi bi-play-circle"></i><span>Assista</span></a>
+      <div class="row gy-5 justify-content-between align-items-center">
+        <div class="row col-lg-5 col-md-4">
+          <div class="">
+            <p>
+            <h4 data-aos="fade-up"> Nossa referência na gestão integrada da saúde, agora também em Ponta Grossa e
+              Região.</h4>
+            </p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#nossasaude" class="btn-get-started">Início</a>
+              <a href="https://www.youtube.com/watch?v=hsk1tWajLq8" class="glightbox btn-watch-video d-flex align-items-center"> <i class="bi bi-play-circle"></i><span>Assista</span></a>
+            </div>
           </div>
-
         </div>
+        <!-- INICIO FORMULARIO DE CONTATO -->
+        <div class="col-lg-7 justify-content-center ">
+          <div id="contato" class="contato">
+            <div class="container div_contato">
+              <div class="section-header">
+                <h2>Solicite agora um orçamento</h2>
+              </div>
+              <div class="row gy-5 gx-lg-5">
+                <div class="my-3">
+                  <form action="" class="php-email-form">
+                    <div class="row">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" required>
+                      </div>
+                      <div class=" form-group mt-3 ">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
+                          required>
+                      </div>
+                    </div>
+                    <div class=" form-group mt-3 ">
+                      <input type="text" class="form-control" name="celular" id="celular" placeholder="Celular"
+                        required>
+                    </div>
+                    <div class="form-group mt-3 radio-contato">
+                      <input class="mr-2" type="radio" id="radio_pessoa" name="opcao_orcamento" value="pessoal">
+                      <label class="mx-2" for="pessoal">Para Mim</label>
+                      <input class="mx-2" type="radio" id="radio_pessoa" name="opcao_orcamento" value="familia">
+                      <label class="mx-2" for="familia">Minha Família</label>
+                      <input class="mx-2" type="radio" id="radio_pessoa" name="opcao_orcamento" value="empresa">
+                      <label class="mx-2" for="empresa">Empresarial</label>
+                    </div>
+                    <div class="my-3">
+                      <div class="loading">Carregando...</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Sua Mensagem foi enviada, logo entraremos em contato.</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Solicitar agora</button></div>
+                  </form>
+                </div><!-- End Contact Form -->
+              </div>
+            </div>
+          </div>
+        </div><!-- End Contact Section -->
       </div>
+      <!--FIM FORMULARIO DE CONTATO-->
     </div>
   </section><!-- End Hero Section -->
 
@@ -130,8 +166,6 @@
         </div>
       </div>
     </section><!-- End NossaSaude Section -->
-
-
 
     <!-- ======= VISOES Section ======= -->
     <section id="services" class="services">
@@ -392,8 +426,7 @@
       </div>
 
 
-    </section>
-    <!-- ======= End Estrutura Section ======= -->
+    </section> <!-- ======= End Estrutura Section ======= -->
 
     <!-- ======= Empresa Section ======= -->
     <section id="empresa" class="empresa">
@@ -430,38 +463,38 @@
         </div>
 
       </div>
-    </section>
-    <!-- ======= End Empresa Section ======= -->
-
+    </section> <!-- ======= End Empresa Section ======= -->
 
     <!-- ======= App Section ======= -->
     <section id="features" class="features">
 
       <div class="container" data-aos="fade-up">
-      <div class="section-header">        
-        <div class="" data-aos="fade-up" data-aos-delay="100">
-          <img class="pb-4" src="assets/img/icons/img_infinito.png" alt="imagem infinito">
-          <h2>Aplicativo Nossa Saúde</h2>
-        </div>    
-      </div>
+        <div class="section-header">
+          <div class="" data-aos="fade-up" data-aos-delay="100">
+            <img class="pb-4" src="assets/img/icons/img_infinito.png" alt="imagem infinito">
+            <h2>Aplicativo Nossa Saúde</h2>
+          </div>
+        </div>
         <div class="row">
           <div class="col-lg-6">
             <div class="bg_div_coral">
               <p class="card-text text-align-justify ">
-                Rápido, prático e moderno, o aplicativo da Nossa Saúde garante uma interface intuitiva e extremamente simples de usar!<br>                
-                Confira as principais funcionalidades:            
-                <ul>
-                  <li>Carteirinha virtual do titular e dependentes</li>
-                  <li>NAI Virtual (pronto atendimento digital)</li>
-                  <li>Consulta à rede credenciada do seu plano</li>
-                  <li>Acesso aos boletos</li>
-                  <li>Farmácias conveniadas</li>
-                  <li>Liberação de guias</li>
-                  <li>Marketplace: ambiente para divulgação de produtos e serviços exclusivo para clientes Nossa Saúde</li>
-                  <li>Comunicados, novidades e o manual de utilização do seu plano.</li>
-                </ul>
-                Aproveite as facilidades do App Nossa Saúde.
-              </p>            
+                Rápido, prático e moderno, o aplicativo da Nossa Saúde garante uma interface intuitiva e extremamente
+                simples de usar!<br>
+                Confira as principais funcionalidades:
+              <ul>
+                <li>Carteirinha virtual do titular e dependentes</li>
+                <li>NAI Virtual (pronto atendimento digital)</li>
+                <li>Consulta à rede credenciada do seu plano</li>
+                <li>Acesso aos boletos</li>
+                <li>Farmácias conveniadas</li>
+                <li>Liberação de guias</li>
+                <li>Marketplace: ambiente para divulgação de produtos e serviços exclusivo para clientes Nossa Saúde
+                </li>
+                <li>Comunicados, novidades e o manual de utilização do seu plano.</li>
+              </ul>
+              Aproveite as facilidades do App Nossa Saúde.
+              </p>
             </div>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
@@ -472,92 +505,18 @@
         </div>
       </div>
 
-      <div class="details">
+      <div class="details text-center">
         <div class="container" data-aos="fade-up" data-aos-delay="300">
           <div class="row">
-            <div class="col-md-6">
-              <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias doloremque quae
-                delectus odit minima corrupti blanditiis quo animi!</p>
-              <a href="#about" class="btn-get-started">Get Started</a>
+            <div class="col">
+              <h4>Beneficiário (a) Consaúde</h4>
+              <p>Seja muito bem-vindo (a)! Estamos prontos para acolher você.</p>
+              <a href="#about" class="btn-get-started">Comece Agora</a>
             </div>
           </div>
         </div>
       </div>
-
-    </section><!-- End App Section -->
-
-
-
-    <!-- ======= Recent Blog Posts Section ======= --
-    <section id="recent-posts" class="recent-posts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Recent Blog Posts</h2>
-
-        </div>
-
-        <div class="row gy-5">
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, December 12</span>
-                <span class="post-author"> / Julia Parker</span>
-              </div>
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-              <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Fri, September 05</span>
-                <span class="post-author"> / Mario Douglas</span>
-              </div>
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-              <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam omnis doloribus...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, July 27</span>
-                <span class="post-author"> / Lisa Hunter</span>
-              </div>
-              <h3 class="post-title">Quia assumenda est et veritati</h3>
-              <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae consectetur magnam...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, Sep 16</span>
-                <span class="post-author"> / Mario Douglas</span>
-              </div>
-              <h3 class="post-title">Pariatur quia facilis similique deleniti</h3>
-              <p>Et consequatur eveniet nam voluptas commodi cumque ea est ex. Aut quis omnis sint ipsum earum quia eligendi...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Recent Blog Posts Section --
-
-
+    </section> <!-- End App Section -->
 
   </main><!-- End #main -->
 
@@ -596,10 +555,7 @@
           </div>
         </div>
       </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- End Footer -->
+    </footer> <!-- End Footer -->
 
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
@@ -612,6 +568,7 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
 
     <!-- Template Main JS File -->

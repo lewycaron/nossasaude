@@ -11,9 +11,13 @@
   --color-default: #2b180d;
   --color-primary: #56b8e6;
   --color-secondary: #ee7969;
+  --color-secondary-rgba: rgba(238, 121, 105, 0.6);
+
   
   --color-white: #ffffff;
   --color-white-rgb: 255, 255, 255;
+
+
 }
 
 /* Smooth scroll behavior */
@@ -118,7 +122,7 @@ section {
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(27, 47, 69, 0.7);
+  background-color: var-(--color-primary);
   position: absolute;
   inset: 0;
 }
@@ -171,7 +175,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -185,7 +189,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(86, 184, 230, 0.8);
+  background: rgba(238, 121, 105, 0.8);
   color: #fff;
 }
 
@@ -341,7 +345,7 @@ section {
     opacity: 0;
     visibility: hidden;
     background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    box-shadow: 0px 0px 30px rgba(238, 121, 105, 0.25);
     transition: 0.2s;
   }
 
@@ -363,7 +367,7 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: var(--color-primary);
+    color: var(--color-secondary);
   }
 
   .navbar .dropdown:hover>ul {
@@ -424,7 +428,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(27, 47, 69, 0.9);
+    background: var(--color-secondary-rgba);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -464,7 +468,7 @@ section {
     display: none;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: rgba(20, 35, 51, 0.6);
+    background-color: var(--color-secondary-rgba);
   }
 
   .navbar .dropdown>.dropdown-active,
@@ -522,6 +526,8 @@ section {
   z-index: 3;
 }
 
+
+
 @media (min-width: 1034px) {
   .hero:after {
     position: absolute;
@@ -539,6 +545,7 @@ section {
   background: rgba(27, 47, 69, 0.6);
   inset: 0;
 }
+
 
 @media (max-width: 1034px) {
   .hero:before {
@@ -1089,33 +1096,33 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact {
-  background: url("../img/contact-bg.png") left top no-repeat;
-  background-size: contain;
-  position: relative;
+.contato h2{
+  color: #fff;
+}
+
+.radio-contato{
+  color: #fff;
+  font-weight: 500;
+}
+.div_contato{
+  background-color: rgba(0,0,0, 0.6);
+  padding: 20px;
+  border-radius: 20px;
+
 }
 
 @media (max-width: 640px) {
-  .contact {
+  .contato {
     background-position: center 50px;
   }
 }
 
-.contact:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
-.contact .info-item+.info-item {
+.contato .info-item+.info-item {
   margin-top: 40px;
 }
 
-.contact .info-item i {
+.contato .info-item i {
   font-size: 20px;
   background: var(--color-primary);
   color: #fff;
@@ -1129,7 +1136,7 @@ section {
   margin-right: 15px;
 }
 
-.contact .info-item h4 {
+.contato .info-item h4 {
   padding: 0;
   font-size: 20px;
   font-weight: 700;
@@ -1137,21 +1144,21 @@ section {
   color: #1c88ba;
 }
 
-.contact .info-item p {
+.contato .info-item p {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
 }
 
-.contact .php-email-form {
+.contato .php-email-form {
   width: 100%;
 }
 
-.contact .php-email-form .form-group {
+.contato .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.contato .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #df1529;
@@ -1160,11 +1167,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contato .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contato .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #059652;
@@ -1173,14 +1180,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contato .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contato .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1193,33 +1200,33 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contato .php-email-form input,
+.contato .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   padding: 12px 15px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contato .php-email-form input:focus,
+.contato .php-email-form textarea:focus {
   border-color: var(--color-primary);
 }
 
-.contact .php-email-form textarea {
+.contato .php-email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #1f98d1;
+.contato .php-email-form button[type=submit] {
+  background: var(--color-secondary);
   border: 0;
   padding: 12px 40px;
   color: #fff;
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: var(--color-primary);
+.contato .php-email-form button[type=submit]:hover {
+  background: var(--color-secondary-rgba);
 }
 
 @-webkit-keyframes animate-loading {
