@@ -964,6 +964,23 @@ section {
 # Estruturas Section
 --------------------------------------------------------------*/
 
+.card-mapa{
+  background-image: url("../img/estrutura.png") ;
+  
+  max-width: 1280px;
+  height: 500px;
+
+}
+
+
+.card-estrutura{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+
+}
+
+
 .estrutura .estrutura-btn {
   font-family: var(--font-default);
   font-weight: 500;
