@@ -563,6 +563,14 @@ section {
   }
 }
 
+.hero ul{
+  color: #fff;
+  font-weight: 500;
+  
+}
+
+
+
 .hero h4 {
   margin: 0;
   font-size: 30px;
@@ -719,6 +727,12 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+
+.about .nav-pills a{
+  margin: 0px 30px 0px 0px;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 36px;
@@ -749,6 +763,39 @@ section {
   left: 0;
   top: -3px;
   color: var(--color-primary);
+}
+
+
+.about .nav-link {
+  background: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-secondary);
+  padding: 12px 0;
+  margin-bottom: -2px;
+  border-radius: 0;
+  font-family: var(--font-secondary);
+}
+
+.about .nav-link.active {
+  color: var(--color-primary);
+  background: none;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+@media (max-width: 575px) {
+  .about .nav-link {
+    font-size: 16px;
+  }
+}
+
+
+
+.about .tab-content i {
+  font-size: 22px;
+  line-height: 0;
+  margin-right: 8px;
+  
 }
 
 /*--------------------------------------------------------------
@@ -936,13 +983,54 @@ section {
 }
 
 
-
 .div_esquerda{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  text-align: right; 
 }
 
+.div_esquerda li, .div_direita li{
+  padding: 5px;
+}
+
+@media  (max-width: 992px){
+
+  .div_esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .estrutura .div_esquerda li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div_direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .estrutura .div_direita li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itens-1 {
+    order: 2;
+  }
+
+  .itens-2 {
+    order: 1;
+  }
+
+
+  
+}
 
 .estrutura h3{
   font-size: 28px;
@@ -956,6 +1044,7 @@ section {
   list-style: none; 
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 
@@ -1008,6 +1097,10 @@ section {
   max-width: 95px;
 }
 
+.img_store{
+  max-width: 120px;
+}
+
 .features {
   padding-bottom: 0;
 }
@@ -1030,10 +1123,7 @@ section {
   color: #29486a;
 }
 
-.features .phone-wrap {
-  position: absolute;
-  right: 0;
-}
+
 
 @media (max-width: 768px) {
   .features .phone-wrap {
@@ -1042,7 +1132,7 @@ section {
 }
 
 .features .phone-wrap img {
-  width: 340px;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
